@@ -18,8 +18,8 @@
  *    shallowCopy({}) => {}
  */
 function shallowCopy(obj) {
-  // eslint-disable-next-line prefer-object-spread
-  return Object.assign({}, obj);
+  const target = {};
+  return Object.assign(target, obj);
 }
 
 /**
